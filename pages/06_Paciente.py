@@ -71,9 +71,3 @@ with c4:
 st.divider()
 
 st.subheader("Resumo")
-
-col1,col2,col3=st.columns(3)
-
-col1.metric("Avaliações",4)
-col2.metric("Relatórios",4)
-col3.metric("Status","Ativo")

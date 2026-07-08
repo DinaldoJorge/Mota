@@ -70,4 +70,3 @@ with c4:
 
 st.divider()
 
-st.subheader("Resumo")

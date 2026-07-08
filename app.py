@@ -1,6 +1,10 @@
 import streamlit as st
 from pathlib import Path
 
+    with open("styles.css") as f:
+
+        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+
 # ============================================
 # CONFIGURAÇÃO DA PÁGINA
 # ============================================
@@ -8,9 +12,16 @@ from pathlib import Path
 st.set_page_config(
     page_title="NeuroAvalia PRO",
     page_icon="🧠",
-    layout="wide",
-    initial_sidebar_state="expanded"
+    layout="wide"
 )
+
+def carregar_css():
+
+    with open("styles.css") as f:
+
+        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+
+carregar_css()
 
 # ============================================
 # CRIA PASTAS NECESSÁRIAS

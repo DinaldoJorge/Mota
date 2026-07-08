@@ -6,7 +6,7 @@ from pathlib import Path
 # ============================================
 
 st.set_page_config(
-    page_title="NeuroAvalia PRO",
+    page_title="NeuroAvaliaMota",
     page_icon="🧠",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -53,35 +53,9 @@ total_pacientes = len(list(Path("pacientes").glob("*.xlsx")))
 # TÍTULO
 # ============================================
 
-st.title("🧠 NeuroAvalia PRO")
+st.title("🧠 NeuroAvaliaMota")
 
 st.caption("Sistema Inteligente de Avaliação Neuropsicológica")
-
-st.divider()
-
-# ============================================
-# DASHBOARD
-# ============================================
-
-col1, col2, col3 = st.columns(3)
-
-with col1:
-    st.metric(
-        label="👤 Pacientes",
-        value=total_pacientes
-    )
-
-with col2:
-    st.metric(
-        label="📋 Modelos",
-        value="1"
-    )
-
-with col3:
-    st.metric(
-        label="🚀 Versão",
-        value="2.0"
-    )
 
 st.divider()
 
@@ -89,7 +63,7 @@ st.divider()
 # BOAS-VINDAS
 # ============================================
 
-st.subheader("Bem-vindo ao NeuroAvalia PRO")
+st.subheader("Bem-vindo ao NeuroAvaliaMota")
 
 st.write("""
 Utilize o menu lateral para navegar pelo sistema.
@@ -119,5 +93,5 @@ st.divider()
 # ============================================
 
 st.caption(
-    "© 2026 NeuroAvalia PRO | Desenvolvido por Professor Dinaldo Jorge"
+    "© 2026 NeuroAvaliaMota | Desenvolvido por Professor Dinaldo Jorge"
 )

@@ -1,1 +1,147 @@
+/* =====================================
+   NEUROAVALIA PRO
+====================================== */
 
+/* Fonte */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Fundo Geral */
+.stApp{
+    background:#0E1117;
+    font-family:'Inter',sans-serif;
+}
+
+/* Sidebar */
+[data-testid="stSidebar"]{
+    background:#161B22;
+    border-right:1px solid #2d3748;
+}
+
+/* Títulos */
+h1,h2,h3,h4,h5{
+    color:#ffffff;
+    font-weight:700;
+}
+
+/* Texto */
+p,label,span{
+    color:#d9d9d9;
+}
+
+/* Botões */
+.stButton>button{
+
+    width:100%;
+
+    border-radius:14px;
+
+    border:none;
+
+    height:46px;
+
+    background:linear-gradient(90deg,#00D084,#00A3FF);
+
+    color:white;
+
+    font-weight:600;
+
+    transition:0.3s;
+}
+
+.stButton>button:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:0px 10px 25px rgba(0,208,132,.35);
+
+}
+
+/* Inputs */
+
+.stTextInput input{
+
+    border-radius:12px;
+
+}
+
+/* Select */
+
+.stSelectbox div{
+
+    border-radius:12px;
+
+}
+
+/* Dataframe */
+
+[data-testid="stDataFrame"]{
+
+    border-radius:15px;
+
+}
+
+/* Expanders */
+
+.streamlit-expanderHeader{
+
+    font-size:18px;
+
+    font-weight:600;
+
+}
+
+/* Cards personalizados */
+
+.card{
+
+background:#161B22;
+
+padding:25px;
+
+border-radius:18px;
+
+border:1px solid #2d3748;
+
+box-shadow:0px 15px 35px rgba(0,0,0,.25);
+
+transition:.3s;
+
+}
+
+.card:hover{
+
+transform:translateY(-3px);
+
+border:1px solid #00D084;
+
+}
+
+/* Métricas */
+
+[data-testid="metric-container"]{
+
+background:#161B22;
+
+border-radius:18px;
+
+padding:15px;
+
+border:1px solid #2d3748;
+
+}
+
+/* Scroll */
+
+::-webkit-scrollbar{
+
+width:8px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:#00D084;
+
+border-radius:10px;
+
+}

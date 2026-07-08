@@ -44,47 +44,86 @@ for pasta in pastas:
     Path(pasta).mkdir(exist_ok=True)
 
 # ============================================
-# CONTA PACIENTES
+# TOTAL DE PACIENTES
 # ============================================
 
 total_pacientes = len(list(Path("pacientes").glob("*.xlsx")))
 
 # ============================================
-# TÍTULO
+# CABEÇALHO
 # ============================================
 
-st.title("🧠 NeuroAvaliaMota")
-
-st.caption("Sistema Inteligente de Avaliação Neuropsicológica")
+st.markdown("""
+<div style="text-align:center;padding-top:15px;padding-bottom:10px;">
+<h1 style="margin-bottom:0px;">🧠 NeuroAvaliaMota</h1>
+<p style="font-size:18px;color:#9ca3af;">
+Sistema Inteligente de Avaliação Neuropsicológica
+</p>
+</div>
+""", unsafe_allow_html=True)
 
 st.divider()
 
 # ============================================
-# BOAS-VINDAS
+# CARD PRINCIPAL
 # ============================================
 
-st.subheader("Bem-vindo ao NeuroAvaliaMota")
+st.markdown(f"""
+<div style="
+background:#1e293b;
+padding:20px;
+border-radius:18px;
+border:1px solid #334155;
+text-align:center;
+margin-bottom:20px;
+">
 
-st.write("""
-Utilize o menu lateral para navegar pelo sistema.
-""")
+<h3 style="margin-bottom:10px;">👥 Pacientes Cadastrados</h3>
+
+<h1 style="font-size:50px;color:#4ade80;margin-top:5px;">
+{total_pacientes}
+</h1>
+
+</div>
+""", unsafe_allow_html=True)
+
+# ============================================
+# BOAS VINDAS
+# ============================================
+
+st.subheader("👋 Bem-vindo!")
+
+st.write(
+"""
+Utilize o menu lateral para acessar rapidamente todas as funcionalidades do sistema.
+"""
+)
+
+# ============================================
+# RECURSOS
+# ============================================
 
 st.info("""
-### Recursos disponíveis
+### Recursos Disponíveis
 
-- 👤 Cadastro de Pacientes
+👤 Cadastro de Pacientes
 
-- 📝 Avaliações Neuropsicológicas
+📝 Avaliações Neuropsicológicas
 
-- 📊 Dashboard
+📊 Dashboard Estatístico
 
-- 📄 Relatórios
+📄 Relatórios Automáticos
 
-- ⚙ Configurações
+⚙️ Configurações do Sistema
 
+💾 Backup dos Pacientes
 """)
 
-st.success("✅ Sistema carregado com sucesso.")
+# ============================================
+# STATUS
+# ============================================
+
+st.success("✅ Sistema pronto para utilização.")
 
 st.divider()
 
@@ -92,6 +131,9 @@ st.divider()
 # RODAPÉ
 # ============================================
 
-st.caption(
-    "© 2026 NeuroAvaliaMota | Desenvolvido por Professor Dinaldo Jorge"
-)
+st.markdown("""
+<div style="text-align:center;color:gray;font-size:14px;padding:15px;">
+© 2026 <b>NeuroAvaliaMota PRO</b><br>
+Desenvolvido por <b>Professor Dinaldo Jorge</b>
+</div>
+""", unsafe_allow_html=True)
